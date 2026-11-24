@@ -12,7 +12,7 @@ try {
     $conn = new mysqli($host, $user, $pass, $name, (int)$port);
     $conn->set_charset('utf8mb4');
 } catch (mysqli_sql_exception $ex) {
-    die("Connection failed. Please check the settings in db.php.");
+    die("Connection failed: " . htmlspecialchars($ex->getMessage()));
 }
 
 // ===== 2. HELPERS =====
