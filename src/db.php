@@ -7,7 +7,8 @@ try {
         getenv('DB_HOST') ?: 'db',
         getenv('DB_USER') ?: 'root',
         getenv('DB_PASS') ?: 'root123',
-        getenv('DB_NAME') ?: 'repair_db'
+        getenv('DB_NAME') ?: 'repair_db',
+        (int)(getenv('DB_PORT') ?: 3306)
     );
     mysqli_set_charset($conn, 'utf8mb4');
 } catch (mysqli_sql_exception $ex) {
