@@ -7,6 +7,9 @@ PHP + MySQL + Docker. Register repairs, track status, search/export the report.
 docker compose down -v      # only needed once if you had the old database
 docker compose up --build -d
 ```
+
+- App deployed : https://mobilerepair-production-09dc0ad6.up.railway.app/repair.php
+-                https://mobilerepair-production-09dc0ad6.up.railway.app/report.php
 - App: http://localhost:8080/repair.php
 - Report: http://localhost:8080/report.php
 - phpMyAdmin: http://localhost:8081 (root / root123)
